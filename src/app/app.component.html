@@ -1,0 +1,4 @@
+<app-tiny-editor [elementId]="'my-editor'" (onEditorContentChange)="keyupHandler($event)"></app-tiny-editor>
+<button (click)="onSubmit()">Submit</button>
+<div class="digital-content" [innerHtml]="docString"></div>
+<div *ngIf="showModalDlg" class="modal fade show in danger" id="myModal" role="dialog"></div>
